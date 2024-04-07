@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBookmark,
@@ -8,6 +9,7 @@ import {
   faPlayCircle,
   faPauseCircle
 } from '@fortawesome/free-solid-svg-icons';
+import icon from '../../public/allah 1 (Traced).svg'
 import AudioPlayer from './AudioPlayer'; 
 
 const MiddleContent = ({ filteredDuas }) => {
@@ -18,7 +20,13 @@ const MiddleContent = ({ filteredDuas }) => {
         filteredDuas?.map((dua) => (
           <div key={dua.dua_id} className="p-4 border-2 border-gray-200 rounded-md shadow-sm">
             <h2 className="text-green-500 font-semibold mb-1 flex items-center">
-              <FontAwesomeIcon icon={faBookmark} className="mr-2 text-black" />
+          
+              <Image
+        src={icon}
+        alt="My SVG"
+        width={30}
+        height={30}
+      />
               {dua.dua_name_en}
             </h2>
             <p className="mb-4 text-black">{dua.top_en}</p>
