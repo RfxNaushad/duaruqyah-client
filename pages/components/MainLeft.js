@@ -37,7 +37,7 @@ const CategoryItem = ({ category, onSelectCategory, selectedCatId }) => {
 
   const handleToggle = () => {
     onSelectCategory(category.cat_id); // Select this category
-    if (!isOpen && subCategories.length === 0) fetchSubCategories(category.cat_id);
+    if (!isOpen && subCategories?.length === 0) fetchSubCategories(category.cat_id);
     setIsOpen(!isOpen);
   };
 
@@ -89,7 +89,7 @@ export default function MainLeft ({ categories, onSelectCategory }) {
         </div>
     </div>
     <ul className="overflow-y-auto">
-      {categories.data.map(category => (
+      {categories?.data.map(category => (
         <CategoryItem 
           key={category.cat_id} 
           category={category} 

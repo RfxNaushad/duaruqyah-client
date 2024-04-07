@@ -8,15 +8,14 @@ import {
   faPlayCircle,
   faPauseCircle
 } from '@fortawesome/free-solid-svg-icons';
-import AudioPlayer from './AudioPlayer'; // Your audio player component
+import AudioPlayer from './AudioPlayer'; 
 
 const MiddleContent = ({ filteredDuas }) => {
-  // ... Other logic for playing audio
 
   return (
     <div className="p-4 space-y-4">
-      {filteredDuas.length > 0 ? (
-        filteredDuas.map((dua) => (
+      {filteredDuas?.length > 0 ? (
+        filteredDuas?.map((dua) => (
           <div key={dua.dua_id} className="p-4 border-2 border-gray-200 rounded-md shadow-sm">
             <h2 className="text-green-500 font-semibold mb-1 flex items-center">
               <FontAwesomeIcon icon={faBookmark} className="mr-2 text-black" />
