@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import avatar from '../../public/Vector (1).png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faUser, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,7 +21,12 @@ const Navbar = () => {
 
       {/* Profile Icon and Dropdown */}
       <div className="flex items-center space-x-2">
-        <FontAwesomeIcon icon={faUser} className="text-gray-600" />
+      <Image
+        src={avatar}
+        alt="My SVG"
+        width={30}
+        height={30}
+      />
         <FontAwesomeIcon icon={faCaretDown} className="text-gray-600" />
       </div>
     </header>
