@@ -22,7 +22,7 @@ const CategoryItem = ({ category, onSelectCategory, selectedCatId }) => {
         setIsLoading(true);
         try {
 
-          const response = await fetch(`https://dua-server-theta.vercel.app/subcategories/${catId}`);
+          const response = await fetch(`https://dua-server-gamma.vercel.app/subcategories/${catId}`);
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
