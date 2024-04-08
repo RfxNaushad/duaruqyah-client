@@ -63,7 +63,7 @@ function HomePage({ categories, subCategories, duas }) {
         <Navbar />
 
         <div className="flex flex-row min-h-screen">
-      <div className="w-1/5">
+      <div className="">
 
         <MainLeft 
         onSelectCategory={handleSelectCategory}  
@@ -81,7 +81,7 @@ function HomePage({ categories, subCategories, duas }) {
         />
 
       </div>
-      <div className="w-1/5"> 
+      <div className=""> 
         <MainRight />
       </div>
     </div>
