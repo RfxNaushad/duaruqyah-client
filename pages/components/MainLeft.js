@@ -78,7 +78,12 @@ const CategoryItem = ({ category, onSelectCategory, selectedCatId }) => {
 export default function MainLeft ({ categories, onSelectCategory }) {
   return (
     <div className="bg-white w-64 h-screen p-4 flex flex-col">
-    <div className="flex items-center rounded-md mb-4 bg-white p-2">
+    <div className="bg-green-500 p-4">
+  <h2 className="text-white text-center text-lg font-bold">Categories</h2>
+
+</div>
+    <h3 className=''>Categories</h3>
+    <div className="flex items-center rounded-md mb-4 bg-white">
     <div className="relative">
           <input 
             type="text" 

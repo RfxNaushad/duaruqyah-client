@@ -54,7 +54,7 @@ function HomePage({ categories, subCategories, duas }) {
   };
 
   // Filter the duas based on the selected category
-  const filteredDuas = duas.data.filter(dua => selectedCatId === dua.cat_id);
+  const filteredDuas = duas?.data.filter(dua => selectedCatId === dua.cat_id);
 
   return (
     <div className="flex">

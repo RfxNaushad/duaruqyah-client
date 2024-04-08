@@ -49,7 +49,6 @@ const MiddleContent = ({ filteredDuas }) => {
               <p className="text-sm text-black">{dua.refference_en}</p>
             </div>
             <div className="flex justify-between items-center mt-2">
-              {/* Audio Player - Assuming you are using a custom audio player */}
               <AudioPlayer audioSrc={dua.audio} />
               <div className="flex">
                 <FontAwesomeIcon

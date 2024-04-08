@@ -18,7 +18,7 @@ const MainRight = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen p-4 shadow-lg rounded-lg">
+    <div className="bg-white w-64 min-h-screen p-4 shadow-lg rounded-lg">
       <div className="font-bold text-xl mb-6 text-black text-center">Settings</div>
 
       {/* Settings Items */}
