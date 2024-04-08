@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLanguage,
@@ -7,15 +7,24 @@ import {
   faDesktop,
   faMoon,
 } from "@fortawesome/free-solid-svg-icons";
+import ThemeContext from "./ThemeContext";
 
 const MainRight = () => {
   const [nightMode, setNightMode] = useState(false);
+  const { toggleTheme } = useContext(ThemeContext);
 
   // Handle night mode toggle
   const toggleNightMode = () => {
     setNightMode(!nightMode);
-    
+    toggleTheme()
+    if (!nightMode) {
+      document.body.classList.add('night-mode');
+    } else {
+      document.body.classList.remove('night-mode');
+    } 
   };
+
+  const textColor = nightMode ? 'text-white' : 'text-gray-800';
 
   return (
     <div className="bg-white w-64 min-h-screen p-4 shadow-lg rounded-lg">
@@ -28,7 +37,7 @@ const MainRight = () => {
             icon={faLanguage}
             className="text-black group-hover:text-white"
           />
-          <span className="ml-3 text-black group-hover:text-white">
+          <span  className="ml-3  text-black group-hover:text-white">
             Language Settings
           </span>
         </div>

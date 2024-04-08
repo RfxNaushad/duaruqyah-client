@@ -7,7 +7,7 @@ import { faSearch, faUser, faCaretDown } from '@fortawesome/free-solid-svg-icons
 const Navbar = () => {
   return (
     <header className="bg-gray-100 w-full p-4 flex justify-between items-center">
-      <h1 className="text-xl font-bold text-gray-800">Dua Page</h1>
+      <h1 className="text-xl font-bold text-black">Dua Page</h1>
       
       {/* Search Bar */}
       <div className="relative">

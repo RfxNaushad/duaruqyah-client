@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from 'react';
+import ThemeContext from './ThemeContext';
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,6 +14,7 @@ import icon from "../../public/allah 1 (Traced).svg";
 import AudioPlayer from "./AudioPlayer";
 
 const MiddleContent = ({ filteredDuas }) => {
+
   return (
     <div className="p-4 space-y-4">
       {filteredDuas?.length > 0 ? (
