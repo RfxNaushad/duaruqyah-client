@@ -30,7 +30,6 @@ const AudioPlayer = ({ audioSrc }) => {
       <FontAwesomeIcon icon={faVolumeUp} className="text-gray-400" />
       <FontAwesomeIcon icon={faShareAlt} className="text-gray-400" />
       <FontAwesomeIcon icon={faDownload} className="text-gray-400" />
-      {/* Additional controls as needed */}
     </div>
   );
 };

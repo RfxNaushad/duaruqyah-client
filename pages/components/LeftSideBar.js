@@ -11,7 +11,7 @@ import {
   faPowerOff,
 } from '@fortawesome/free-solid-svg-icons';
 
-const RightSidebar = () => {
+const LeftSidebar = () => {
   const icons = [
     faHandHoldingHeart,
     faHouseUser,
@@ -53,4 +53,4 @@ const RightSidebar = () => {
   );
 };
 
-export default RightSidebar;
+export default LeftSidebar;
